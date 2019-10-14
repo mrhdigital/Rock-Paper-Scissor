@@ -20,7 +20,10 @@ document.onkeyup = function (e) {
     // and store this selection in a variable computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-
+    if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
+        window.alert("Please select r, s or p" );
+    }
+    
     if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
         if ((userGuess === "r") && (computerGuess === "s")) {
             wins++;
