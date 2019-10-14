@@ -20,8 +20,8 @@ document.onkeyup = function (e) {
     // and store this selection in a variable computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    
 
+    if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
         if ((userGuess === "r") && (computerGuess === "s")) {
             wins++;
         }
@@ -45,16 +45,17 @@ document.onkeyup = function (e) {
         }
 
 
-     var html = "<p> You choose: " + userGuess + "</p>" +
-         "<p> Computer choose: " + computerGuess + "</p>"  +
-             "<p> Wins: " + wins + "</p>" +
-             "<p> Losses: " + losses + "</p>" +
-             "<p> Ties: " + ties + "</p>";
+        var html = "<p> You choose: " + userGuess + "</p>" +
+            "<p> Computer choose: " + computerGuess + "</p>" +
+            "<p> Wins: " + wins + "</p>" +
+            "<p> Losses: " + losses + "</p>" +
+            "<p> Ties: " + ties + "</p>";
 
 
 
-      //Get the HTML content of a <p> element with id="userSelect"
+        //Get the HTML content of a <p> element with id="userSelect"
         // //and Sets the content of an element to html
-         document.getElementById("userSelect").innerHTML = html;
+        document.getElementById("userSelect").innerHTML = html;
 
+    }
 }
