@@ -6,7 +6,17 @@ document.onkeyup = function (e) {
     var userGuess = e.key;
 
 
-     var html = "<p> You choose: " + userGuess + "</p>";
+    // Create the array that list all the option for the computer to choose
+    var computerChoices = ["r", "s", "p"];
+
+    //computer randomly select the index value of the array computerChoices
+    // and store this selection in a variable computerGuess
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+
+
+     var html = "<p> You choose: " + userGuess + "</p>" +
+         "<p> Computer choose: " + computerGuess + "</p>";
 
 
 
