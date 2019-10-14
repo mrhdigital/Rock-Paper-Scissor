@@ -1,4 +1,11 @@
 //alert("JS file is linked");
+
+//create the variables to hold the numbers of wins, loses, and ties. These varibales starts with 0
+var wins = 0;
+var losses = 0;
+var ties = 0;
+
+
 // This function is run whenever key is pressed
 // user selection of key pressed is stored in var userGuess
 // write the function that stored the key user pressed in a variable userGuess
@@ -16,7 +23,10 @@ document.onkeyup = function (e) {
 
 
      var html = "<p> You choose: " + userGuess + "</p>" +
-         "<p> Computer choose: " + computerGuess + "</p>";
+         "<p> Computer choose: " + computerGuess + "</p>"  +
+             "<p> Wins: " + wins + "</p>" +
+             "<p> Losses: " + losses + "</p>" +
+             "<p> Ties: " + ties + "</p>";
 
 
 
