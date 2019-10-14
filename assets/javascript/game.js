@@ -48,11 +48,11 @@ document.onkeyup = function (e) {
         }
 
 
-        var html = "<p> You choose: " + userGuess + "</p>" +
-            "<p> Computer choose: " + computerGuess + "</p>" +
-            "<p> Wins: " + wins + "</p>" +
-            "<p> Losses: " + losses + "</p>" +
-            "<p> Ties: " + ties + "</p>";
+        // var html = "<p> You choose: " + userGuess + "</p>" +
+        //     "<p> Computer choose: " + computerGuess + "</p>" +
+        //     "<p> Wins: " + wins + "</p>" +
+        //     "<p> Losses: " + losses + "</p>" +
+        //     "<p> Ties: " + ties + "</p>";
 
 document.getElementById("yourChoice").innerHTML = userGuess;
         document.getElementById("wrongGuesses").innerHTML = computerGuess;
@@ -63,7 +63,7 @@ document.getElementById("yourChoice").innerHTML = userGuess;
 
         //Get the HTML content of a <p> element with id="userSelect"
         // //and Sets the content of an element to html
-        document.getElementById("userSelect").innerHTML = html;
+       // document.getElementById("userSelect").innerHTML = html;
 
     }
 }
