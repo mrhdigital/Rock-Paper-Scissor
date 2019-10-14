@@ -23,7 +23,7 @@ document.onkeyup = function (e) {
     if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
         window.alert("Please select r, s or p" );
     }
-    
+
     if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
         if ((userGuess === "r") && (computerGuess === "s")) {
             wins++;
@@ -54,7 +54,12 @@ document.onkeyup = function (e) {
             "<p> Losses: " + losses + "</p>" +
             "<p> Ties: " + ties + "</p>";
 
-
+document.getElementById("yourChoice").innerHTML = userGuess;
+        document.getElementById("wrongGuesses").innerHTML = computerGuess;
+        document.getElementById("guessesRemain").innerHTML = ties;
+        document.getElementById("winCounter").innerHTML = wins;
+        document.getElementById("lossCounter").innerHTML = losses;
+        console.log("you have entered " + userGuess);
 
         //Get the HTML content of a <p> element with id="userSelect"
         // //and Sets the content of an element to html
