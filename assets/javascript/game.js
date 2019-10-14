@@ -20,6 +20,29 @@ document.onkeyup = function (e) {
     // and store this selection in a variable computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
+    
+
+        if ((userGuess === "r") && (computerGuess === "s")) {
+            wins++;
+        }
+        else if ((userGuess === "s") && (computerGuess === "r")) {
+            losses++;
+        }
+        else if ((userGuess === "r") && (computerGuess === "p")) {
+            losses++;
+        }
+        else if ((userGuess === "p") && (computerGuess === "r")) {
+            wins++;
+        }
+        else if ((userGuess === "s") && (computerGuess === "p")) {
+            wins++;
+        }
+        else if ((userGuess === "p") && (computerGuess === "s")) {
+            losses++;
+        }
+        else {
+            ties++;
+        }
 
 
      var html = "<p> You choose: " + userGuess + "</p>" +
