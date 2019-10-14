@@ -15,7 +15,62 @@
 	<h1> Rock, Scissor, Paper Game!</h1>
 	<p> Select your Options [r, p , or s] </p>
 	<p id = "userSelect" ></p>
-	 
+    
+    
+    <div class="container">
+			
+		<div class="card1">
+			
+			<div class="card-body">
+	<!-- <p > Select your Options [r, p , or s] </p> -->
+				<h1 class="display-3"> Scissor, Paper Game!</h1>
+			<h3 id = "userSelect" class="lead">Select your Options [r, p , or s] !</h3>
+			
+			<div>
+				<audio id="myAudio">
+						<source src="assets/music/birdsChirping.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+				
+			</div>
+		</div>
+
+		<div class="card">
+			
+			<div class="card-body">
+				You Choose: <span id = "yourChoice"></span> </span>
+				
+			</div>
+		</div>
+		<div class="card">
+			
+			<div class="card-body">
+				Computer Choose: <span id = "wrongGuesses"></span> </span>
+				
+			</div>
+		</div>
+
+		<div class="card">
+				
+				<div class="card-body">
+					Ties: <span id = "guessesRemain"> 0 </span> 		
+				</div>
+		</div>
+		<div class="card">
+					
+			<div class="card-body">
+				Win Counter: <span id =winCounter> 0 </span>	
+			</div>		
+				
+		<div class="card">
+					
+			<div class="card-body">
+				Loss Counter: <span id =lossCounter> 0 </span>	
+			</div>
+		</div>		
+					
+</div>
+
 	
 <!-- linked to javascript fiel -->
 <script src = "assets\javascript\game.js"> </script>
