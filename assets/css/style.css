@@ -16,6 +16,7 @@ body {
    .card {
 
     text-align: center;
+    font-size: 26px;
    }
    .card1 {
     background-color: rgb(229, 241, 184);
