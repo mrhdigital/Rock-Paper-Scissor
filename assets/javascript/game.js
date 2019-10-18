@@ -56,7 +56,7 @@ document.onkeyup = function (e) {
 
 document.getElementById("yourChoice").innerHTML = userGuess;
         document.getElementById("computerChoice").innerHTML = computerGuess;
-        document.getElementById("guessesRemain").innerHTML = ties;
+        document.getElementById("tiesCounter").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
         document.getElementById("lossCounter").innerHTML = losses;
         console.log("you have entered " + userGuess);

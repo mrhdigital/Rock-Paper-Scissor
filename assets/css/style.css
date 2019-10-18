@@ -20,7 +20,7 @@ body {
     color: #ee0404;
    }
 
-   #yourChoice, #computerChoice {
+   #yourChoice, #computerChoice, #tiesCounter, #winCounter, #lossCounter {
 
     text-align: center;
     font-size: 26px;
