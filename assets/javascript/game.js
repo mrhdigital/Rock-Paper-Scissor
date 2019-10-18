@@ -55,11 +55,12 @@ document.onkeyup = function (e) {
         //     "<p> Ties: " + ties + "</p>";
 
 document.getElementById("yourChoice").innerHTML = userGuess;
-        document.getElementById("wrongGuesses").innerHTML = computerGuess;
+        document.getElementById("computerChoice").innerHTML = computerGuess;
         document.getElementById("guessesRemain").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
         document.getElementById("lossCounter").innerHTML = losses;
         console.log("you have entered " + userGuess);
+        //"<span style='color: red;'>**Message</span>"
 
         //Get the HTML content of a <p> element with id="userSelect"
         // //and Sets the content of an element to html

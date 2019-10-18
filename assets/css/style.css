@@ -20,6 +20,13 @@ body {
     color: #ee0404;
    }
 
+   #yourChoice, #computerChoice {
+
+    text-align: center;
+    font-size: 26px;
+    color: #ee0404;
+   }
+
    .card {
 
     text-align: center;
