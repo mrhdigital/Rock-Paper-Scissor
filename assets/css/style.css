@@ -32,7 +32,8 @@ body {
     text-align: center;
     font-size: 26px;
    }
-   .card1 {
+   .card1  {
     background-color: rgb(229, 241, 184);
     text-align: center;
+    margin-bottom: 10px;
    }
