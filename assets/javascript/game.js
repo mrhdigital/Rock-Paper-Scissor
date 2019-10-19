@@ -5,6 +5,7 @@ var wins = 0;
 var losses = 0;
 var ties = 0;
 var userGuessWord = "";
+var computerGuessWord = "";
 
 
 // This function is run whenever key is pressed
@@ -21,6 +22,16 @@ document.onkeyup = function (e) {
     //computer randomly select the index value of the array computerChoices
     // and store this selection in a variable computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+    if (computerGuess === "r") {
+        computerGuessWord = "Rock";
+   }
+   else if(userGuess === "s") {
+    computerGuessWord = "Scissor";
+   }
+   else {
+    computerGuessWord = "Paper";
+   }
 
     if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
         window.alert("Please select r, s or p" );
@@ -68,7 +79,7 @@ document.onkeyup = function (e) {
         //     "<p> Ties: " + ties + "</p>";
 
 document.getElementById("yourChoice").innerHTML = userGuessWord;
-        document.getElementById("computerChoice").innerHTML = computerGuess;
+        document.getElementById("computerChoice").innerHTML = computerGuessWord;
         document.getElementById("tiesCounter").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
         document.getElementById("lossCounter").innerHTML = losses;
