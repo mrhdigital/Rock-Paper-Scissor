@@ -22,12 +22,13 @@ document.onkeyup = function (e) {
     //computer randomly select the index value of the array computerChoices
     // and store this selection in a variable computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
+    // convert the computer guess letter into the actual word
     if (computerGuess === "r") {
         computerGuessWord = "Rock";
    }
-   else if(userGuess === "s") {
-    computerGuessWord = "Scissor";
+   else if(computerGuess === "s") {
+    computer
+    GuessWord = "Scissor";
    }
    else {
     computerGuessWord = "Paper";
@@ -36,7 +37,7 @@ document.onkeyup = function (e) {
     if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
         window.alert("Please select r, s or p" );
     }
-
+    // convert the user guess letter into the actual word
     if (userGuess === "r") {
         userGuessWord = "Rock";
    }
