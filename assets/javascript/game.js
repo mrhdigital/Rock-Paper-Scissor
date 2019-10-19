@@ -4,6 +4,7 @@
 var wins = 0;
 var losses = 0;
 var ties = 0;
+var userGuessWord = "";
 
 
 // This function is run whenever key is pressed
@@ -12,6 +13,7 @@ var ties = 0;
 document.onkeyup = function (e) {
     var userGuess = e.key;
 
+   
 
     // Create the array that list all the option for the computer to choose
     var computerChoices = ["r", "s", "p"];
@@ -23,6 +25,17 @@ document.onkeyup = function (e) {
     if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
         window.alert("Please select r, s or p" );
     }
+
+    if (userGuess === "r") {
+        userGuessWord = "Rock";
+   }
+   else if(userGuess === "s") {
+       userGuessWord = "Scissor";
+   }
+   else {
+       userGuessWord = "Paper";
+   }
+
 
     if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
         if ((userGuess === "r") && (computerGuess === "s")) {
@@ -54,7 +67,7 @@ document.onkeyup = function (e) {
         //     "<p> Losses: " + losses + "</p>" +
         //     "<p> Ties: " + ties + "</p>";
 
-document.getElementById("yourChoice").innerHTML = userGuess;
+document.getElementById("yourChoice").innerHTML = userGuessWord;
         document.getElementById("computerChoice").innerHTML = computerGuess;
         document.getElementById("tiesCounter").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
