@@ -6,6 +6,8 @@ var losses = 0;
 var ties = 0;
 var userGuessWord = "";
 var computerGuessWord = "";
+var computerGuessWordImage = "";
+var userGuessWordImage = "";
 
 
 // This function is run whenever key is pressed
@@ -24,7 +26,8 @@ document.onkeyup = function (e) {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     // convert the computer guess letter into the actual word
     if (computerGuess === "r") {
-        computerGuessWord = "Rock" + "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
+        computerGuessWord = "Rock";
+        computerGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
    }
    else if(computerGuess === "s") {
     computer
@@ -39,7 +42,8 @@ document.onkeyup = function (e) {
     }
     // convert the user guess letter into the actual word
     if (userGuess === "r") {
-        userGuessWord = "Rock" +  "<img src=/assets/images.Rock.jpeg>";
+        userGuessWord = "Rock";
+        userGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
    }
    else if(userGuess === "s") {
        userGuessWord = "Scissor" + "<img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
@@ -80,6 +84,9 @@ document.onkeyup = function (e) {
         //     "<p> Ties: " + ties + "</p>";
 
 document.getElementById("yourChoice").innerHTML = userGuessWord;
+document.getElementById("yourChoiceImage").innerHTML = userGuessWordImage;
+document.getElementById("compuerChoiceImage").innerHTML = computerGuessWordImage;
+
         document.getElementById("computerChoice").innerHTML = computerGuessWord;
         document.getElementById("tiesCounter").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
