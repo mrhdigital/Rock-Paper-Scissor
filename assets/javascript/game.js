@@ -24,7 +24,7 @@ document.onkeyup = function (e) {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     // convert the computer guess letter into the actual word
     if (computerGuess === "r") {
-        computerGuessWord = "Rock" + "<img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
+        computerGuessWord = "Rock" + "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
    }
    else if(computerGuess === "s") {
     computer
@@ -39,7 +39,7 @@ document.onkeyup = function (e) {
     }
     // convert the user guess letter into the actual word
     if (userGuess === "r") {
-        userGuessWord = "Rock" + "<img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
+        userGuessWord = "Rock" +  "<img src=/assets/images.Rock.jpeg>";
    }
    else if(userGuess === "s") {
        userGuessWord = "Scissor" + "<img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
