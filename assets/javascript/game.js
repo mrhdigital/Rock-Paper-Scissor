@@ -39,7 +39,7 @@ document.onkeyup = function (e) {
     }
     // convert the user guess letter into the actual word
     if (userGuess === "r") {
-        userGuessWord = "Rock";
+        userGuessWord = "Rock" + "<img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
    }
    else if(userGuess === "s") {
        userGuessWord = "Scissor";
