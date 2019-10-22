@@ -37,3 +37,8 @@ body {
     text-align: center;
     margin-bottom: 10px;
    }
+   .card-footer1 {
+    background-color: rgb(229, 241, 184);
+    text-align: center;
+    margin-top: 10px;
+   }
