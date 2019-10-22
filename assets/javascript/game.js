@@ -8,6 +8,7 @@ var userGuessWord = "";
 var computerGuessWord = "";
 var computerGuessWordImage = "";
 var userGuessWordImage = "";
+var gameMessage = "";
 
 
 // This function is run whenever key is pressed
@@ -58,25 +59,38 @@ document.onkeyup = function (e) {
 
     if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
         if ((userGuess === "r") && (computerGuess === "s")) {
+            gameMessage = "Rock crushes Scissor: YOU WIN";
             wins++;
         }
         else if ((userGuess === "s") && (computerGuess === "r")) {
+            gameMessage = "Rock crushes Scissor: YOU LOST";
+
             losses++;
         }
         else if ((userGuess === "r") && (computerGuess === "p")) {
+            gameMessage = "Paper covers Rock: YOU LOST";
+
             losses++;
         }
         else if ((userGuess === "p") && (computerGuess === "r")) {
+            gameMessage = "Paper covers Rock: YOU WIN";
+
             wins++;
         }
-        else if ((userGuess === "s") && (computerGuess === "p")) {
+        else if ((userGuess === "s") && (computeGuess === "p")) {
+            gameMessage = "Scissors cuts Paper: YOU WIN";
+
             wins++;
         }
         else if ((userGuess === "p") && (computerGuess === "s")) {
+            gameMessage = "Scissors cuts Paper: YOU LOST";
+
             losses++;
         }
         else {
             ties++;
+            gameMessage = "Both are that same : GAME TIE";
+
         }
 
 
