@@ -23,15 +23,15 @@ document.onkeyup = function (e) {
     // convert the user guess letter into the actual word
     if (userGuess === "r") {
         userGuessWord = "Rock";
-        userGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
+        userGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:200px'>";
     }
     else if (userGuess === "s") {
         userGuessWord = "Scissor";
-        userGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:300px'>";
+        userGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:200px'>";
     }
     else {
         userGuessWord = "Paper";
-        userGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:300px'>";
+        userGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:200px'>";
     }
 
 
@@ -44,15 +44,15 @@ document.onkeyup = function (e) {
     // convert the computer guess letter into the actual word
     if (computerGuess === "r") {
         computerGuessWord = "Rock";
-        computerGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
+        computerGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:200px'>";
     }
     else if (computerGuess === "s") {
         computerGuessWord = "Scissor";
-        computerGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:300px'>";
+        computerGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:200px'>";
     }
     else {
         computerGuessWord = "Paper";
-        computerGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:300px'>";
+        computerGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:200px'>";
     }
 
     

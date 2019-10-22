@@ -13,6 +13,11 @@ body {
        
    }
 
+   .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
    .lead1 {
     
         margin: 0;
