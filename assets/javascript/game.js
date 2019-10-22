@@ -16,7 +16,23 @@ var gameMessage = "";
 // write the function that stored the key user pressed in a variable userGuess
 document.onkeyup = function (e) {
     var userGuess = e.key;
-
+    console.log(userGuess);
+    if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
+        window.alert("Please select r, s or p");
+    }
+    // convert the user guess letter into the actual word
+    if (userGuess === "r") {
+        userGuessWord = "Rock";
+        userGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
+    }
+    else if (userGuess === "s") {
+        userGuessWord = "Scissor";
+        userGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:300px'>";
+    }
+    else {
+        userGuessWord = "Paper";
+        userGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:300px'>";
+    }
 
 
     // Create the array that list all the option for the computer to choose
@@ -39,22 +55,7 @@ document.onkeyup = function (e) {
         computerGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:300px'>";
     }
 
-    if ((userGuess !== "r") && (userGuess !== "s") && (userGuess !== "p")) {
-        window.alert("Please select r, s or p");
-    }
-    // convert the user guess letter into the actual word
-    if (userGuess === "r") {
-        userGuessWord = "Rock";
-        userGuessWordImage = "<img src='assets/images/Rock.jpeg'alt='My Image' style='width:300px'>";
-    }
-    else if (userGuess === "s") {
-        userGuessWord = "Scissor";
-        userGuessWordImage = "<img src='assets/images/Scissor.jpeg'alt='My Image' style='width:300px'>";
-    }
-    else {
-        userGuessWord = "Paper";
-        userGuessWordImage = "<img src='assets/images/Paper.jpeg'alt='My Image' style='width:300px'>";
-    }
+    
 
 
     if (((userGuess === "r") || (userGuess === "s") || (userGuess === "p"))) {
@@ -77,7 +78,7 @@ document.onkeyup = function (e) {
 
             wins++;
         }
-        else if ((userGuess === "s") && (computeGuess === "p")) {
+        else if ((userGuess === "s") && (computerGuess === "p")) {
             gameMessage = "Scissors cuts Paper: YOU WIN";
 
             wins++;
@@ -89,7 +90,7 @@ document.onkeyup = function (e) {
         }
         else {
             ties++;
-            gameMessage = "Both are that same : GAME TIE";
+            gameMessage = "Both are the same : GAME TIES";
 
         }
 
