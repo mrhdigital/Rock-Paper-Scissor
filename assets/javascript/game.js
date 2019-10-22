@@ -108,6 +108,7 @@ document.onkeyup = function (e) {
         document.getElementById("tiesCounter").innerHTML = ties;
         document.getElementById("winCounter").innerHTML = wins;
         document.getElementById("lossCounter").innerHTML = losses;
+        document.getElementById("gameMessage").innerHTML = gameMessage;
         console.log("you have entered " + userGuess);
         //"<span style='color: red;'>**Message</span>"
 
