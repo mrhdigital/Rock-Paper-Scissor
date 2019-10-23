@@ -1,4 +1,4 @@
-This is a fun learning activity of coding Rock-Paper-Scissor Game!
+# This is a fun learning activity of coding Rock-Paper-Scissor Game!
 
 **Rules for rock-paper-scissors:**
 
