@@ -1,5 +1,6 @@
 This is a fun learning activity of coding Rock-Paper-Scissor Game!
-**Rules for rock-paper-scissors**
+
+**Rules for rock-paper-scissors:**
 
 Rock: Rock wins against scissor as rock destroys scissor.
       Rock loses against paper as paper covers rock.
