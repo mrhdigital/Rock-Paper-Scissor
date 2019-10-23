@@ -11,4 +11,10 @@ Paper: Paper wins against rock as paper covers rock.
 Scissor: Scissor wins against paper as scissor cuts paper.
          Scissor loses against rock as destroys scissor.  
 
- Ties happens when both symbols are the same.                
+ Ties happens when both symbols are the same.   
+ 
+ ### Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
