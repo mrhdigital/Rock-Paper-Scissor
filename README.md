@@ -17,4 +17,8 @@ Scissor: Scissor wins against paper as scissor cuts paper.
 - HTML
 - CSS
 - JavaScript
+<<<<<<< HEAD
 - Bootstrap
+=======
+- Bootstrap
+>>>>>>> 36ec9e44eb644c9c58744917dd919fdc22b2d443
