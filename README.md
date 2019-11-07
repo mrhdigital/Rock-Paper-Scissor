@@ -1,5 +1,7 @@
 # This is a fun learning activity of coding Rock-Paper-Scissor Game!
 
+CheckOut: 👍 https://mrhdigital.github.io/Rock-Paper-Scissor/index.html
+
 **Rules for rock-paper-scissors:**
 
 Rock: Rock wins against scissor as rock destroys scissor.
